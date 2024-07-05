@@ -66,4 +66,4 @@ console.log(nestedObj.a);
 console.log(newObj.a);
 
 console.log(nestedObj.b); //[1, 2, 3, 4, 5, 6]
-console.log(newObj.b); //[99, 2, 3, 4, 5, 6]
+console.log(newObj.b); //[999, 2, 3, 4, 5, 6]
