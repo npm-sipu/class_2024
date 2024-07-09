@@ -49,21 +49,31 @@ let obj2 = { ...obj };
 // console.log("object1", obj.a);
 // console.log("object2", obj2.a);
 
-let nestedObj = {
-  a: "hello",
-  b: [1, 2, 3, 4, 5, 6],
-};
+// let nestedObj = {
+//   a: "hello",
+//   b: [1, 2, 3, 4, 5, 6],
+// };
 
-let newObj = { ...nestedObj, b: [...nestedObj.b] };
+// let newObj = { ...nestedObj, b: [...nestedObj.b] };
 
-// let newObj = JSON.parse(JSON.stringify(nestedObj));
+// let newObj2 = JSON.parse(JSON.stringify(nestedObj));
 
-newObj.a = "world";
+// newObj.a = "world";
 
-newObj.b[0] = 999;
+// newObj.b[0] = 999;
 
-console.log(nestedObj.a);
-console.log(newObj.a);
+// console.log(nestedObj.a);
+// console.log(newObj.a);
 
-console.log(nestedObj.b); //[1, 2, 3, 4, 5, 6]
-console.log(newObj.b); //[999, 2, 3, 4, 5, 6]
+// console.log(nestedObj.b); //[1, 2, 3, 4, 5, 6]
+// console.log(newObj.b); //[999, 2, 3, 4, 5, 6]
+
+let arr = [1, 2, 3, 4, 5, 6];
+
+let newStr = arr.slice(0, 3);
+
+let arrSplc = arr.splice(arr.length, 0, 7);
+
+console.log(newStr);
+console.log(arrSplc);
+console.log(arr);
